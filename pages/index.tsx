@@ -1,9 +1,9 @@
 import Head from "next/head";
-import { styled } from "../stitches.config";
+import { styled } from "stitches.config";
 
 const Text = styled("p", {
   fontFamily: "$system",
-  color: "$gray50",
+  color: "$gray800",
   variants: {
     size: {
       1: {
