@@ -3,7 +3,7 @@ import { styled } from "../stitches.config";
 
 const Text = styled("p", {
   fontFamily: "$system",
-  color: "$red",
+  color: "$gray50",
   variants: {
     size: {
       1: {
@@ -19,7 +19,7 @@ const Text = styled("p", {
   },
 });
 
-export default function Home() {
+function Home() {
   return (
     <div>
       <Head>
@@ -35,3 +35,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;
