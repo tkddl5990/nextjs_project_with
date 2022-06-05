@@ -14,6 +14,7 @@
     "resolveJsonModule": true,
     "noEmit": true,
     "isolatedModules": true,
+    "downlevelIteration": true,
     "jsx": "preserve",
     "sourceMap": false,
     "incremental": true,

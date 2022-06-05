@@ -1,4 +1,4 @@
-import { map, filter } from "../fpfx";
+import { map, filter, reduce } from "../fpfx";
 
 interface TargetObjType {
   id: string;
@@ -79,9 +79,9 @@ describe("map method", () => {
 describe("filter method", () => {
   it("number type filter", () => {
     const target = [1, 2, 3, 4, 5];
-    const range = (num: number) => num <= 3;
+    const condition = (num: number) => num % 3 === 1;
 
-    expect(filter(range, target)).toEqual([1, 2, 3]);
+    expect(filter(condition, target)).toEqual([1, 4]);
   });
 
   it("string type filter", () => {
@@ -116,5 +116,28 @@ describe("filter method", () => {
       { id: "3", name: "lion", type: "animal", count: 6 },
       { id: "5", name: "tiger", type: "animal", count: 3 },
     ]);
+  });
+});
+
+describe("reduce method", () => {
+  it("typically reduce", () => {
+    const num = [1, 2, 3, 4, 5];
+    const add = (a: number, b: number): number => a + b;
+
+    expect(reduce(add, 0, num)).toBe(15);
+  });
+
+  it("accumulated string reduce", () => {
+    const strs = ["h", "e", "l", "l", "o"];
+    const accStr = (acc: string, str: string) => (acc += str);
+
+    expect(reduce(accStr, "", strs)).toBe("hello");
+  });
+
+  it("no initial value in reduce function", () => {
+    const num = [1, 2, 3, 4, 5];
+    const add = (a: number, b: number): number => a + b;
+
+    expect(reduce(add, num)).toBe(16);
   });
 });
