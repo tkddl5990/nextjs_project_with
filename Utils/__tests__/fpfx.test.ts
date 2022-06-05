@@ -1,4 +1,4 @@
-import { map, filter } from "../fptx";
+import { map, filter } from "../fpfx";
 
 interface TargetObjType {
   id: string;
