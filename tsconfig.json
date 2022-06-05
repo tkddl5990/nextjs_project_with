@@ -12,8 +12,8 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "noEmit": true,
+    "isolatedModules": true,
     "jsx": "preserve",
     "sourceMap": false,
     "incremental": true,
@@ -22,7 +22,8 @@
       "@Pages/*": ["pages/*"],
       "@Public/*": ["public/*"],
       "@Styles/*": ["styles/*"],
-      "@Components/*": ["Components/*"]
+      "@Components/*": ["Components/*"],
+      "@Utils/*": ["Utils/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],
