@@ -23,7 +23,7 @@
       "@Public/*": ["public/*"],
       "@Styles/*": ["styles/*"],
       "@Components/*": ["components/*"],
-      "@Utils/*": ["dutils/*"]
+      "@Utils/*": ["utils/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],
