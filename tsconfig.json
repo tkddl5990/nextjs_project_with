@@ -22,8 +22,8 @@
       "@Pages/*": ["pages/*"],
       "@Public/*": ["public/*"],
       "@Styles/*": ["styles/*"],
-      "@Components/*": ["Components/*"],
-      "@Utils/*": ["Utils/*"]
+      "@Components/*": ["components/*"],
+      "@Utils/*": ["utils/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],
